@@ -1,0 +1,253 @@
+{% extends "base.html" %} {% block page_title %} {{page_title}} {% endblock %} {% block useful_information_contener%}
+
+
+<table class="table">
+    * Внимание! Указанные выше спецификации следует использовать только для оценочных расчетов. <br>
+    <thead>
+        <tr>
+            <th scope="col">Название</th>
+            <th scope="col">Внутренние размеры (мм)</th>
+            <th scope="col">Размер двери (м)</th>
+            <th scope="col">Вес (кг) </th>
+            <th scope="col">Объем (м3) </th>
+            <th scope="col">Загрузка (кг)</th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+        <tr>
+            <th scope="row">20' Dry Freight Container<br>
+                <img src="{{ url_for('static',
+filename='img/container_img/1_a_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 5 919 <br> Ш: 2 348 <br> В: 2 385</td>
+            <td>Ш: 2 286<br> В: 2 278</td>
+            <td>1 900</td>
+            <td>33,0 </td>
+            <td>22 100 </td>
+        </tr>
+
+
+
+        <tr>
+            <th scope="row">40' Dry Freight Container<br>
+                <img src="{{ url_for('static',
+filename='img/container_img/2_a_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 12 045 <br> Ш: 2 309 <br> В: 2 379 </td>
+            <td> Ш: 2 280 <br> В: 2 278 </td>
+            <td>3 084</td>
+            <td>67,3 </td>
+            <td>27 396 </td>
+        </tr>
+
+
+        <tr>
+            <th scope="row">40' High Cube Container <br>
+                <img src="{{ url_for('static',
+filename='img/container_img/3_a_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 12 056 <br> Ш: 2 347 <br> В: 2 684 </td>
+            <td>Ш: 2 320 <br> В: 2 570 </td>
+            <td>2 900 </td>
+            <td>76,0</td>
+            <td>29 600</td>
+        </tr>
+
+
+
+        <tr>
+            <th scope="row">45' High Cube Container <br>
+                <img src="{{ url_for('static',
+filename='img/container_img/4_a_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 13 582 <br> Ш: 2 347 <br> В: 2 690 </td>
+            <td> Ш: 2 340 <br> В: 2 585 </td>
+            <td>3 900 </td>
+            <td>85,7 </td>
+            <td>28 600 </td>
+        </tr>
+
+
+
+        <tr>
+            <th scope="row">20' Reefer Container <br>
+                <img src="{{ url_for('static',
+filename='img/container_img/1_b_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 5 428 <br> Ш: 2 266 <br> В: 2 240 </td>
+            <td>Ш: 2 286 <br> В: 2 188</td>
+            <td>1 900</td>
+            <td>27,5 </td>
+            <td>24 060 </td>
+        </tr>
+
+
+
+        <tr>
+            <th scope="row">40' Reefer Container <br>
+                <img src="{{ url_for('static',
+filename='img/container_img/2_b_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 11 207 <br> Ш: 2 246 <br> В: 2 183 </td>
+            <td>Ш: 2 216 <br> В: 2 188</td>
+            <td>2 940 </td>
+            <td>54,9 </td>
+            <td>25 640 </td>
+        </tr>
+
+
+
+        <tr>
+            <th scope="row">40' High Cube Reefer Container <br>
+                <img src="{{ url_for('static',
+filename='img/container_img/3_b_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 11 628 <br> Ш: 2 294 <br> В: 2 509 </td>
+            <td>Ш: 2 290 <br> В: 2 535 </td>
+            <td>4 840</td>
+            <td>66,9 </td>
+            <td>28 070 </td>
+        </tr>
+
+
+
+        <tr>
+            <th scope="row">45' High Cube Reefer Container <br>
+                <img src="{{ url_for('static',
+filename='img/container_img/4_b_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 13 102 <br> Ш: 2 294 <br> В: 2 509 </td>
+            <td> Ш: 2 290 <br> В: 2 535 </td>
+            <td> 4 430 </td>
+            <td> 75,4</td>
+            <td>27 300 </td>
+        </tr>
+
+
+
+        <tr>
+            <th scope="row">20' Open Top Container<br>
+                <img src="{{ url_for('static',
+filename='img/container_img/1_c_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 5 919 <br> Ш: 2 340 <br> В: 2 386 </td>
+            <td> Ш: 2 286 <br> В: 2 251 </td>
+            <td>5 200 </td>
+            <td>31,6 </td>
+            <td>21 826 </td>
+        </tr>
+
+
+
+        <tr>
+            <th scope="row">40' Open Top Container <br>
+                <img src="{{ url_for('static',
+filename='img/container_img/2_c_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 12 043 <br> Ш: 2 340 <br> В: 2 272 </td>
+            <td>Ш: 2 279 <br> В: 2 278</td>
+            <td>2 174</td>
+            <td>64,0 </td>
+            <td>26 181 </td>
+        </tr>
+
+        <tr>
+            <th scope="row"> 20' Flat Rack Container<br>
+                <img src="{{ url_for('static',
+filename='img/container_img/1_d_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 5 662 <br> Ш: 2 438 <br> В: 2 327</td>
+            <td></td>
+            <td>4 300</td>
+            <td> </td>
+            <td>21 470</td>
+        </tr>
+
+
+        <tr>
+            <th scope="row">20' Collapsible Rack Container<br>
+                <img src="{{ url_for('static',
+filename='img/container_img/2_d_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 5 946 <br> Ш: 2 126 <br> В: 2 233 </td>
+            <td></td>
+            <td>2 530</td>
+            <td> </td>
+            <td>27 100</td>
+        </tr>
+
+        <tr>
+            <th scope="row">40' Flat Rack Container <br>
+                <img src="{{ url_for('static',
+filename='img/container_img/3_d_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 12 080 <br> Ш: 2 438 <br> В: 1 950</td>
+            <td></td>
+            <td>2 900</td>
+            <td> </td>
+            <td>25 000</td>
+        </tr>
+
+        <tr>
+            <th scope="row">40' Collapsible Rack Container <br>
+                <img src="{{ url_for('static',
+filename='img/container_img/4_d_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 12 080 <br> Ш: 2 126 <br> В: 2 043 </td>
+            <td></td>
+            <td>5 480</td>
+            <td> </td>
+            <td>29 200</td>
+        </tr>
+
+
+        <tr>
+            <th scope="row">20' Open Side/Open Top Container<br>
+                <img src="{{ url_for('static',
+filename='img/container_img/1_e_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 5 928 <br> Ш: 2 318 <br> В: 2 259 </td>
+            <td>Ш: 2 236 <br> В: 2 278</td>
+            <td>5 800</td>
+            <td>31,0 </td>
+            <td>21 255</td>
+        </tr>
+
+
+        <tr>
+            <th scope="row">40' Artificial Tweendeck <br>
+                <img src="{{ url_for('static',
+filename='img/container_img/1_f_info.gif') }}" alt="">
+
+            </th>
+            <td>Д: 12 065 <br> Ш: 2 216</td>
+            <td></td>
+            <td>5 400</td>
+            <td> </td>
+            <td>39 000</td>
+        </tr>
+
+
+
+
+    </tbody>
+</table>
+
+{% endblock %}

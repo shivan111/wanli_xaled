@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!-- ? -->
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Prodimaks / Продимпэкс</title>
+
+    <!-- meta for Popup msg
+    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+    <!--
+    <meta name="description" content="Learn how to recreate the preloader from Cantina Negrar. Tutorial for a passionate front-end web developers by Petr Tichy."> -->
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/loader.css">
+
+
+    <!-- Bootstrap CSS -->
+
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+
+    <!-- 
+    <link href="../static/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+-->
+
+
+    <!-- My CSS -->
+    <link href="../static/css/my_css.css" rel="stylesheet">
+
+    <!-- -->
+    <!-- -->
+
+</head>
+<!--###################################################################################-->
+
+<body class="demo">
+    <!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+    <!-- loader_content  -->
+    <div id="container" classs="loader_content">
+
+
+
+        <!-- start Loader #################################### -->
+        {%block loader%} {% include 'lo.html' %} {%endblock%}
+        <!-- end Loader ///////////////////////////////////// -->
+
+        <!-- start Nav bar  #################################### -->
+        {%block nav_bar%} {% include 'nav_bar.html' %} {%endblock%}
+        <!-- end  Nav bar  ///////////////////////////////////// -->
+
+        <!-- start start_img  #################################### -->
+        <div> <img src="/static/img/prod_log.jpg" class="img-fluid" width="100%" height="auto" alt="... "></div> <br>
+        <!-- end  end_img  ///////////////////////////////////// -->
+
+
+        <div> </div>
+        <marquee onmouseover="this.stop()" onmouseout="this.start()"> <b> <p class="start_header" > 🚚 ...  Доставка и таможенное оформление грузов со всего мира по всей России                  </p>  <br>
+        </b>
+
+        </marquee>
+
+
+
+
+
+
+        <!-- start  index_text_contener_1 #################################### -->
+        <div>
+            <div class="container">{% block index_text_contener_1 %} {% endblock %} </div>
+        </div>
+        <!--  end index_text_contener_1 ///////////////////////////////////// -->
+
+        <!-- start  term #################################### -->
+        <div>
+            <div class="container">{% block term_1 %} {% endblock %} </div>
+        </div>
+        <!--  end term  ///////////////////////////////////// -->
+
+        <!-- start  obt_fru_obst #################################### -->
+        <div>
+            <div class="container">{% block obt_fru_obst_contener %} {% endblock %} </div>
+        </div>
+        <!--  end obt_fru_obst  ///////////////////////////////////// -->
+
+        <!-- start  useful_information_contener #################################### -->
+        <div>
+            <div class="container">{% block useful_information_contener %} {% endblock %} </div>
+        </div>
+        <!--  end useful_information_contener  ///////////////////////////////////// -->
+        <div>
+            <div class="container">{% block kontakt_contener %} {% endblock %} </div>
+        </div>
+
+
+
+        <div id="content">
+            <h2> </h2>
+        </div>
+
+        <!-- start  footer ################################## -->
+        {# start fotter from footer.html#} {%block footer%} {% include 'footer.html' %} {%endblock%} {#end fotter from footer.html#}
+        <!-- end  footer ///////////////////////////////////// -->
+    </div>
+
+
+    <!--###################################################################################-->
+
+    <!-- start js section ###############################-->
+
+    <!-- js Bootstrab-->
+    <!-- <script type="text/javascript" href="../static/js/bootstrap.js"></script>-->
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+    <!--<script src="../static/js/bootstrap.bundle.js"></script>-->
+
+    <!--start go to the button script-->
+    <button id="my_top_Btn" class="btn btn-primary active" type="button" onclick="topFunction()" title="Go to top">△ Top</button>
+    <script src="../static/js/verx_button.js"></script>
+
+    <!--  js loader ################################### -->
+    <script src="../static/js/vendor/modernizr-2.6.2.min.js"></script>
+    <!--   <script src="../static/js/jquery.js"></script>-->
+    <script src="../static/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="../static/js/main.js"></script>
+
+
+
+    <!--###################################################################################-->
+
+    <!---->
+
+
+</body>
+
+</html>
