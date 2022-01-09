@@ -22,7 +22,8 @@ company_title= {'ru':'Продимпэкс',
 app = Flask(__name__)
 
 
-@app.route('/', methods=['POST', 'GET']) 
+#@app.route('/', methods=['POST', 'GET']) 
+@app.route('/') 
 def index(): 
     global company_title_ru
     page_title='Index'
