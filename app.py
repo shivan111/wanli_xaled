@@ -23,7 +23,7 @@ app = Flask(__name__)
 
 
 #@app.route('/', methods=['POST', 'GET']) 
-@app.route('/') 
+@app.route('/iindex') 
 def index(): 
     global company_title_ru
     page_title='Index'
