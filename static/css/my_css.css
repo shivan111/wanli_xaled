@@ -168,9 +168,9 @@
     /*#########################################################################*/
     /*  start responsive nav bar CSS */
     
-    @media screen and (min-width: 800px) {
-        .container {
-            margin: 1em 2em;
+    @media screen and (max-width: 800px) {
+        #normal_diametr {
+            display: none;
         }
     }
     /*  end responsive nav bar CSS */
