@@ -6,23 +6,29 @@
 
     <form class="container-fluid justify-content-start">
 
-        <!-- 
-        <div class="topnav" id="myTopnav">
-          
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div> -->
+        <div id="wenn_small_diametr_ist">
+            <div class="topnav" id="myTopnav">
+
+                <a href="{{ url_for( 'index') }}" class="me-1"> {{var_top_nav_bar[0]}}</a>
+
+                <a href="{{ url_for( 'useful_info') }}" class="me-1">{{var_top_nav_bar[1]}} </a>
+
+                <a href="{{ url_for( 'term') }}" class="me-1">{{var_top_nav_bar[2]}} </a>
+
+                <a href="{{ url_for( 'obt_fru_obst') }}" class="me-1">{{var_top_nav_bar[3]}} </a>
+
+                <a href="{{ url_for( 'kontakt') }}" class="me-1">{{var_top_nav_bar[4]}} </a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
 
 
+        <div id="wenn_normal_diametr_ist">
 
-        <div id="normal_diametr">
-
-            <button class="btn btn-outline-success me-0  " type="button" onclick="window.location.href='{{ url_for( 'index') }}';">{{var_top_nav_bar[0]}}</button>
+            <button class="btn btn-outline-success me-0 " type="button" onclick="window.location.href='{{ url_for( 'index') }}';">{{var_top_nav_bar[0]}}</button>
 
 
             <button class="btn btn-outline-success me-0 " type="button" onclick="window.location.href='{{ url_for( 'useful_info') }}';">{{var_top_nav_bar[1]}} </button>
@@ -38,19 +44,6 @@
         </div>
 
 
-        <!-- start links spache button -->
-
-        <div class="dropdown">
-            <a class="btn_language btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Sprache
-                
-            </a>
-
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item  " href="#">{{var_language[1]}}</a></li>
-                <li><a class="dropdown-item " href="#">{{var_language[2]}}</a></li>
-                <li><a class="dropdown-item " href="#">{{var_language[3]}}</a></li>
-            </ul>
-        </div>
 
 
 
@@ -59,6 +52,22 @@
 
 
     </form>
+
+
+
+    <!-- start links spache button -->
+
+    <div class="dropdown me-1" id="dropdown_wenn_small_screen">
+        <a class="btn_language btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Sprache
+    
+</a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item  " href="#">{{var_language[1]}}</a></li>
+            <li><a class="dropdown-item " href="#">{{var_language[2]}}</a></li>
+            <li><a class="dropdown-item " href="#">{{var_language[3]}}</a></li>
+        </ul>
+    </div>
 
 
 
