@@ -177,6 +177,7 @@
         position: absolute;
         right: 0;
         top: 5px;
+        clear: both;
     }
     
     @media screen and (max-width: 800px) {
@@ -206,6 +207,12 @@
             display: block;
             text-align: left;
         }
+        #dropdown_wenn_small_screen {
+            float: right;
+            position: absolute;
+            right: 1px;
+            top: 1px;
+        }
     }
     /*  end responsive nav bar CSS  wenn_normal_diametr_ist  */
-    /*  ###########################################################*/
+    /*  clear: both; ###########################################################*/
