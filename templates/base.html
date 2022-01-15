@@ -27,9 +27,6 @@
 
     <link href="../static/css/bootstrap.css" rel="stylesheet">
 
-    <!-- 
-    
--->
 
     <!-- My CSS -->
     <link href="../static/css/my_css.css" rel="stylesheet">
@@ -59,8 +56,8 @@
         <!-- end  Nav bar  ///////////////////////////////////// -->
 
         <!-- start start_img  #################################### -->
-        <div> <img src="/static/img/prod_log.jpg" class="img-fluid" width="100%" height="auto" alt="... "></div> <br>
-        <!-- end  end_img  ///////////////////////////////////// -->
+        <div> <img src="/static/img/prod_log.jpg" class="img-fluid img_small" width="100%" height="auto" alt="... "></div> <br>
+        <!-- end  end_img  ///////////////////////////////////// style="display: block;"-->
 
 
         <div> </div>
@@ -92,15 +89,27 @@
         </div>
         <!--  end obt_fru_obst  ///////////////////////////////////// -->
 
+
         <!-- start  useful_information_contener #################################### -->
         <div>
             <div class="container">{% block useful_information_contener %} {% endblock %} </div>
         </div>
+
         <!--  end useful_information_contener  ///////////////////////////////////// -->
+
+
+        <!-- start  kontakt page #################################### -->
         <div>
             <div class="container">{% block kontakt_contener %} {% endblock %} </div>
         </div>
+        <!--  end kontakt page  ///////////////////////////////////// -->
 
+
+        <!-- start  Eng page #################################### -->
+        <div>
+            <div class="container">{% block Eng %} {% endblock %} </div>
+        </div>
+        <!--  end Eng page  ///////////////////////////////////// -->
 
 
         <div id="content">

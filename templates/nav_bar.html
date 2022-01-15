@@ -3,24 +3,65 @@
 
 {% block nav_bar %}
 <nav class=" navbar navbar-light bg-light  navbar-expand-lg bg-light fixed-top">
+
     <form class="container-fluid justify-content-start">
 
-        <button class="btn btn-outline-success me-2" type="button" onclick="window.location.href='{{ url_for( 'index') }}';">{{var_top_nav_bar[0]}}</button>
+        <!-- 
+        <div class="topnav" id="myTopnav">
+          
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div> -->
 
 
-        <button class="btn btn-outline-success me-2" type="button" onclick="window.location.href='{{ url_for( 'useful_info') }}';">{{var_top_nav_bar[1]}} </button>
 
 
-        <button class="btn btn-outline-success me-2" type="button" onclick="window.location.href='{{ url_for( 'term') }}';">{{var_top_nav_bar[2]}} </button>
 
-        <button class="btn btn-outline-success me-2" type="button" onclick="window.location.href='{{ url_for( 'obt_fru_obst') }}';">{{var_top_nav_bar[3]}}</button>
+        <button class="btn btn-outline-success me-0  " type="button" onclick="window.location.href='{{ url_for( 'index') }}';">{{var_top_nav_bar[0]}}</button>
 
-        <button class="btn btn-outline-success me-2" type="button" onclick="window.location.href='{{ url_for( 'kontakt') }}';">{{var_top_nav_bar[4]}}</button>
+
+        <button class="btn btn-outline-success me-0 " type="button" onclick="window.location.href='{{ url_for( 'useful_info') }}';">{{var_top_nav_bar[1]}} </button>
+
+
+        <button class="btn btn-outline-success me-0 " type="button" onclick="window.location.href='{{ url_for( 'term') }}';">{{var_top_nav_bar[2]}} </button>
+
+        <button class="btn btn-outline-success me-0 " type="button" onclick="window.location.href='{{ url_for( 'obt_fru_obst') }}';">{{var_top_nav_bar[3]}}</button>
+
+        <button class="btn btn-outline-success me-0 " type="button" onclick="window.location.href='{{ url_for( 'kontakt') }}';">{{var_top_nav_bar[4]}}</button>
+
+
+
+        <!-- start links spache button -->
+
+        <div class="dropdown">
+            <a class="btn_language btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Sprache
+                
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item  " href="#">{{var_language[1]}}</a></li>
+                <li><a class="dropdown-item " href="#">{{var_language[2]}}</a></li>
+                <li><a class="dropdown-item " href="#">{{var_language[3]}}</a></li>
+            </ul>
+        </div>
+
+
+
+
+
 
 
     </form>
 
+
+
     <!-- start links spache button -->
+    <!-- 
     <div class="dropdown">
         <a class="btn_language btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
          Sprache
@@ -32,7 +73,7 @@
             <li><a class="dropdown-item" href="#">{{var_language[3]}}</a></li>
         </ul>
     </div>
-
+-->
 </nav>
 
 

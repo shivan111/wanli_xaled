@@ -1,207 +1,177 @@
-/* start css loader ###################################*/
-
-h1 {
-    height: 100%;
-    /* The html and body elements cannot have any padding or margin. */
-    margin: 0;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
-    margin-bottom: 3px;
-}
-
-.entry-header {
-    text-align: left;
-    margin: 0 auto 50px auto;
-    width: 80%;
-    max-width: 978px;
-    position: relative;
-    z-index: 10001;
-}
-
-.loader_content {
-    padding-top: 100px;
-}
-
-
-/*###################################################################*/
-
-
-/*  start css go to the top button  ###################################  */
-
-#my_top_Btn {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Fixed/sticky position */
-    bottom: 20px;
-    /* Place the button at the bottom of the page */
-    right: 30px;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Make sure it does not overlap */
-    border: none;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: rgb(57, 7, 151);
-    /* Set a background color */
-    color: white;
-    /* Text color */
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    padding: 15px;
-    /* Some padding */
-    border-radius: 10px;
-    /* Rounded corners */
-    font-size: 18px;
-    /* Increase font size */
-}
-
-#my_top_Btn:hover {
-    background-color: rgb(196, 35, 35);
-    /* Add a dark-grey background on hover */
-}
-
-
-/* end  css go to the button  /////////////////////////7  */
-
-
-/*#########################################################################*/
-
-
-/* start term.html.css */
-
-.terminalogy_header {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-
-/* end term.html.css  */
-
-
-/*#########################################################################*/
-
-
-/* start obt_fru_obst.html.css */
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f1f1f1;
-    padding: 20px;
-    font-family: Arial;
-}
-
-
-/* Center website */
-
-.main {
-    max-width: 1000px;
-    margin: auto;
-}
-
-h1 {
-    font-size: 50px;
-    word-break: break-all;
-}
-
-.row {
-    margin: 8px -16px;
-}
-
-
-/* Add padding BETWEEN each column (if you want) */
-
-.row,
-.row>.column {
-    padding: 8px;
-}
-
-
-/* Create three equal columns that floats next to each other */
-
-.column {
-    float: left;
-    width: 33.33%;
-    display: none;
-    /* Hide columns by default */
-}
-
-
-/* Clear floats after rows */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-/* Content */
-
-.content {
-    background-color: white;
-    padding: 10px;
-}
-
-
-/* The "show" class is added to the filtered elements */
-
-.show {
-    display: block;
-}
-
-
-/* Style the buttons */
-
-.btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: white;
-    cursor: pointer;
-}
-
-
-/* Add a grey background color on mouse-over */
-
-.btn:hover {
-    background-color: #ddd;
-}
-
-
-/* Add a dark background color to the active button */
-
-.btn.active {
-    background-color: #666;
-    color: white;
-}
-
-
-/* end obt_fru_obst.html.css */
-
-.start_header {
-    font-style: oblique;
-    color: brown;
-    font-weight: 600px;
-    font-size: xx-large;
-}
-
-.btn_language {
-    background-color: rgb(172, 64, 64);
-}
-
-
-/*#########################################################################*/
-
-
-/*  Fotter CSS */
-
-address {
-    display: block;
-    font-style: italic;
-}
+    /* start css loader ###################################*/
+    
+    h1 {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+        margin: 0;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 32px;
+        margin-bottom: 3px;
+    }
+    
+    .entry-header {
+        text-align: left;
+        margin: 0 auto 50px auto;
+        width: 80%;
+        max-width: 978px;
+        position: relative;
+        z-index: 10001;
+    }
+    
+    .loader_content {
+        padding-top: 100px;
+    }
+    /*###################################################################*/
+    /*  start css go to the top button  ###################################  */
+    
+    #my_top_Btn {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Fixed/sticky position */
+        bottom: 20px;
+        /* Place the button at the bottom of the page */
+        right: 30px;
+        /* Place the button 30px from the right */
+        z-index: 99;
+        /* Make sure it does not overlap */
+        border: none;
+        /* Remove borders */
+        outline: none;
+        /* Remove outline */
+        background-color: rgb(57, 7, 151);
+        /* Set a background color */
+        color: white;
+        /* Text color */
+        cursor: pointer;
+        /* Add a mouse pointer on hover */
+        padding: 15px;
+        /* Some padding */
+        border-radius: 10px;
+        /* Rounded corners */
+        font-size: 18px;
+        /* Increase font size */
+    }
+    
+    #my_top_Btn:hover {
+        background-color: rgb(196, 35, 35);
+        /* Add a dark-grey background on hover */
+    }
+    /* end  css go to the button  /////////////////////////7  */
+    /*#########################################################################*/
+    /* start term.html.css */
+    
+    .terminalogy_header {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    /* end term.html.css  */
+    /*#########################################################################*/
+    /* start obt_fru_obst.html.css */
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #f1f1f1;
+        padding: 20px;
+        font-family: Arial;
+    }
+    /* Center website */
+    
+    .main {
+        max-width: 1000px;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: 50px;
+        word-break: break-all;
+    }
+    
+    .row {
+        margin: 8px -16px;
+    }
+    /* Add padding BETWEEN each column (if you want) */
+    
+    .row,
+    .row>.column {
+        padding: 8px;
+    }
+    /* Create three equal columns that floats next to each other */
+    
+    .column {
+        float: left;
+        width: 33.33%;
+        display: none;
+        /* Hide columns by default */
+    }
+    /* Clear floats after rows */
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Content */
+    
+    .content {
+        background-color: white;
+        padding: 10px;
+    }
+    /* The "show" class is added to the filtered elements */
+    
+    .show {
+        display: block;
+    }
+    /* Style the buttons */
+    
+    .btn {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: white;
+        cursor: pointer;
+    }
+    /* Add a grey background color on mouse-over */
+    
+    .btn:hover {
+        background-color: #ddd;
+    }
+    /* Add a dark background color to the active button */
+    
+    .btn.active {
+        background-color: #666;
+        color: white;
+    }
+    /* end obt_fru_obst.html.css */
+    
+    .start_header {
+        font-style: oblique;
+        color: brown;
+        font-weight: 600px;
+        font-size: xx-large;
+    }
+    
+    .btn_language {
+        background-color: rgb(172, 64, 64);
+    }
+    /*#########################################################################*/
+    /*  Fotter CSS */
+    
+    address {
+        display: block;
+        font-style: italic;
+    }
+    /*#########################################################################*/
+    /*  start responsive nav bar CSS */
+    
+    @media screen and (min-width: 800px) {
+        .container {
+            margin: 1em 2em;
+        }
+    }
+    /*  end responsive nav bar CSS */
+    /*########################################################################*/

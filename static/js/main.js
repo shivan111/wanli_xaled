@@ -10,7 +10,7 @@ Oh nice, welcome to the js file of dreams.
 Enjoy responsibly!
 @ihatetomatoes
 
-*/
+
 /* start  lo.html.js */
 
 $(document).ready(function() {
@@ -23,10 +23,7 @@ $(document).ready(function() {
 });
 /* end lo.html.js */
 
-/**################################################################ */
-/* print something in console ###################### */
-var text = "i was herie saab"
-console.log(text)
+
 
 /**################################################################ */
 /* start js obt_fru_obst.html */
@@ -83,3 +80,19 @@ for (var i = 0; i < btns.length; i++) {
 
 /* end js obt_fru_obst.html */
 /*#########################################################################*/
+
+/* start botton for responsive nav bar */
+
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+/* end  botton for responsive nav bar */
+/**################################################################ */
