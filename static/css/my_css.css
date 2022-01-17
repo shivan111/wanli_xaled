@@ -184,9 +184,9 @@
         #saab_wenn_normal_diametr_ist {
             display: none;
         }
-        /* #saab_btn_lang_dropdown_wenn_small_screen {
+        #saab_btn_lang_dropdown_wenn_small_screen {
             display: none;
-        } */
+        }
     }
     
     @media screen and (max-width: 800px) {
