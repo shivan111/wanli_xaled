@@ -168,11 +168,11 @@
     /*#########################################################################*/
     /*  start responsive nav bar CSS */
     
-    #wenn_small_diametr_ist {
+    #saab_wenn_small_diametr_ist {
         display: none;
     }
     
-    #dropdown_wenn_small_screen {
+    #saab_btn_lang_dropdown_wenn_small_screen {
         float: right;
         position: absolute;
         right: 0;
@@ -181,13 +181,16 @@
     }
     
     @media screen and (max-width: 800px) {
-        #wenn_normal_diametr_ist {
+        #saab_wenn_normal_diametr_ist {
             display: none;
         }
+        /* #saab_btn_lang_dropdown_wenn_small_screen {
+            display: none;
+        } */
     }
     
     @media screen and (max-width: 800px) {
-        #wenn_small_diametr_ist {
+        #saab_wenn_small_diametr_ist {
             display: inline;
         }
         .topnav.responsive {
@@ -202,17 +205,28 @@
             float: left;
             display: block;
         }
-        .responsive a {
+        /* .responsive a {
             float: none;
             display: block;
             text-align: left;
-        }
-        #dropdown_wenn_small_screen {
+        } */
+        #btn_lang_dropdown_wenn_small_screen {
             float: right;
             position: absolute;
             right: 1px;
             top: 1px;
         }
+        /**/
+    }
+    
+    @media screen and (max-width: 600px) {
+        .saab_img_small {
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin: auto;
+        }
     }
     /*  end responsive nav bar CSS  wenn_normal_diametr_ist  */
     /*  clear: both; ###########################################################*/
+    /* Add a black background color to the top navigation */
