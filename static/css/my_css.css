@@ -311,4 +311,5 @@ address {
 
 .nav-item:hover {
     background-color: yellow;
+    font-weight: bold;
 }
