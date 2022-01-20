@@ -313,3 +313,8 @@ address {
     background-color: yellow;
     font-weight: bold;
 }
+
+.dropdown-item:hover {
+    font-weight: bold;
+    background-color: rgb(162, 207, 90);
+}
