@@ -305,8 +305,27 @@ address {
 
 /* ###########################################################*/
 
-.container-fluid {
-    background-color: rgb(219, 241, 241);
+
+/* .container-fluid {
+    color: #f1f1f1;
+    background-color: rgb(230, 231, 227);
+    font-style: italic;
+    font-weight: bolder;
+} */
+
+.navbar-collapse {
+    background: rgb(254, 255, 251);
+}
+
+.nav-item {
+    color: #d2eb48;
+}
+
+.saab_navbar-nav {
+    /* background-color: rgb(35, 36, 35);
+    color: #d2eb48; */
+    font-style: italic;
+    font-weight: bolder;
 }
 
 .nav-item:hover {
@@ -316,5 +335,6 @@ address {
 
 .dropdown-item:hover {
     font-weight: bold;
-    background-color: rgb(162, 207, 90);
+    /* color: rgb(162, 207, 90); */
+    background-color: rgb(219, 164, 141);
 }

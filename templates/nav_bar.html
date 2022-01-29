@@ -18,7 +18,7 @@
 
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0  saab_navbar-nav">
 
 
 
@@ -35,7 +35,7 @@
                     <a class="nav-link " aria-current="page" href="{{ url_for( 'obt_fru_obst') }}">  {{var_top_nav_bar[3]}} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="{{ url_for( 'kontakt') }}">  {{var_top_nav_bar[4]}} </a>
+                    <a class="nav-link " aria-current="page" href="{{ url_for( 'kontakt_func') }}">  {{var_top_nav_bar[4]}} </a>
                 </li>
 
                 <!-- <li class="nav-item">
@@ -47,13 +47,13 @@
 
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#fffff" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Sprache
             </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">{{var_language[1]}}</a></li>
-                        <li><a class="dropdown-item" href="#">{{var_language[2]}} </a></li>
-                        <li><a class="dropdown-item" href="#">{{var_language[3]}}</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for( 'index') }}">{{var_language[1]}}</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for( 'eng_page_func') }}">{{var_language[2]}}</a></li>
+                        <li><a class="dropdown-item" href="ffffff">{{var_language[3]}}</a></li>
 
 
                         <!-- <li>

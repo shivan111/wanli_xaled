@@ -48,7 +48,7 @@ def term():
 
 
 @app.route('/kontakt')
-def kontakt():
+def kontakt_func():
     page_title='Kontakt'
     return render_template('kontakt.html',
                            page_title=page_title,var_top_nav_bar=var_top_nav_bar,
@@ -69,6 +69,13 @@ def about():
                            page_title=page_title,var_top_nav_bar=var_top_nav_bar,
                            var_language=var_language)
 
+
+@app.route('/eng',)
+def eng_page_func():
+    page_title='eng'
+    return render_template('eng.html',
+                           page_title=page_title,var_top_nav_bar=var_top_nav_bar,
+                           var_language=var_language)
 ################################################
 #...
 if __name__ == '__main__':
