@@ -210,99 +210,6 @@ address {
 /*#########################################################################*/
 
 
-/*  start responsive nav bar CSS */
-
-
-/* 
-#saab_play_when_small_screen {
-    display: none;
-} */
-
-
-/* #saab_wenn_small_diametr_ist {
-    display: none;
-} */
-
-
-/* 
-#saab_dropdown_btn_lang {
-    float: right;
-    position: absolute;
-    right: 0;
-    top: 5px;
-    clear: both;
-}
-
-@media screen and (max-width: 768px) {
-    #saab_play_when_small_screen {
-        display: block;
-    }
-} */
-
-
-/* 
-@media screen and (max-width: 768px) {
-    #saab_wenn_small_diametr_ist {
-        display: block;
-    }
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive .icon {
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-    .icon {
-        float: left;
-        display: block;
-    } */
-
-
-/* .responsive a {
-            float: none;
-            display: block;
-            text-align: left;
-        } */
-
-
-/* #saab_dropdown_btn_lang {
-            float: right;
-            position: absolute;
-            right: 1px;
-            top: 1px; 
-
-
-}*/
-
-
-/**/
-
-
-/* 
-}
-@media screen and (max-width: 768px) {
-    .saab_img_small {
-        width: 100%;
-        height: auto;
-        position: relative;
-        margin: 2px auto;
-    }
-} */
-
-
-/*  end responsive nav bar CSS  wenn_normal_diametr_ist  */
-
-
-/*  clear: both; ###########################################################*/
-
-
-/*###########################################################*/
-
-
-/* Add a black background color to the top navigation */
-
-
 /* ###########################################################*/
 
 
@@ -337,4 +244,11 @@ address {
     font-weight: bold;
     /* color: rgb(162, 207, 90); */
     background-color: rgb(219, 164, 141);
+}
+
+
+/* email section css */
+
+.saab_send_email_btn {
+    background-color: #339af0;
 }

@@ -1,19 +1,143 @@
- {% extends "base.html" %} {% block title %} kontakt{% endblock %} {% block kontakt_contener%}
+{% extends "base.html" %} {% block page_title %} {{page_title}} {% endblock %} {% block kontakt_contener%}
+<!-- <div class="container container_footer"> -->
 
-<div class="container container_footer">
-    <!-- 
-    <address>
-      <hr>
-    <h4 style="text-align: center;" >ООО Продимпэкс</h4> <br>
+<!-- start contact us Section -->
+<h1> Prodimaks / Продимпэкс</h1>
 
-    🚩 :  Москва 125167, Ул Ленинградский проспект<br>
-    ☎ :  +7(495) 995-75-73 <br>
-    ✉ : prodimpeks@mail.ru <br>
-    
-    </address>
 
-    <hr>
--->
-</div>
+<section id="Contact_us">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12">
+                <div class="title_sec">
+                    <p></p>
+                    <h2></h2>
+                    <h1>Contact us !</h1>
+
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div id="cnt_form">
+                    <!-- email/send_em.py            -->
+                    <form enctype="multipart/form-data" id="contact-form" class="contact" name="contact-form" method="post" action=" php/send-mail.php">
+                        <fieldset>
+                            <legend>
+                                You can send us an E-Mail ...
+                                <!-- <a class="page-scroll" href=" appointment.html">
+                                      Jetzt einen Termin buchen
+                                  </a> -->
+                            </legend>
+                            <!-- 
+                            <div class="form-group">
+                                <select class="form-control form-control-sm" aria-required="true" required="required" name="type_of_work_select">
+                                      <option>Bitte Auswahl treffen!</option>
+                                      <option>Allround Handwerk allgemein</option>
+                                      <option>IKEA Küchenplanung + Montage</option>
+                                      <option>Küchenmontage IKEA</option>
+                                      <option>Möbelmontage</option>
+                                      <option>IKEA Pax Schrank Service</option>
+                                      <option>Singleküche / Büroküche kaufen</option>
+                                      <option>Küchenelektrogeräte anschließen</option>
+                                      <option>Spülmaschine / Waschmaschine anschließen</option>
+                                      <option>Arbeitsplattenservice</option>
+                                      <option>Küchenumzug</option>
+                                      <option>Wohnungsumzug</option>
+                                      <option>Maler / Renovierung</option>
+                                      <option>Laminat verlegen lassen</option>
+                                      <option>Objekteinrichtung</option>
+                                      <option>Objektküchen für Bauträger</option>
+                                      <option>Ladenbau / Objekteinrichtung</option>
+                                      <option>Gartenhaus Montage</option>
+                                      <option>relocation service</option>
+                                      <option>Anfrage an Sachverständigen</option>
+                                      <option>mehrere Projekte gleichzeitig</option>
+                                  </select>
+                            </div> -->
+
+
+                            <!-- 
+                            <div class="form-group">
+                                <select class="form-control form-control-sm" aria-required="true" required="required" name="location">
+                                      <option>Bitte den Standort auswählen</option>
+                                      <option>Berlin</option>
+                                      <option>Brandenburg</option>
+                                      <option>Bergkamen</option>
+                                      <option>Bochum</option>
+                                      <option>Dortmund</option>
+                                      <option>Düsseldorf</option>
+                                      <option>Essen</option>
+                                      <option>Gelsenkirchen</option>
+                                      <option>Hamm</option>  
+                                      <option>Lippstadt</option>
+                                      <option>Lünen</option>
+                                      <option>Marl</option>
+                                      <option>Soest</option>
+                                      <option>Unna</option>
+                                      <option>Werne</option>
+
+                                      
+                            </select>
+
+                </div> -->
+
+
+                            <div class="form-group">
+                                <input type="text" name="sender_name" class="form-control name-field" required="required" placeholder="Your Name" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="sender_email" class="form-control mail-field" required="required" placeholder="Your Email" />
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" name="sender_tel" class="form-control name-field" required="required" placeholder="Handynummer" />
+                            </div>
+                            <div class="form-group">
+                                <textarea name="sender_message" id="sender_message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Attachment
+                                      <input type="file" name="file[]" multiple="multiple" />
+
+                                  </label>
+
+                                <!-- <textarea name="Datei_Hochladen" id="Datei_Hochladen" required="required" class="form-control" placeholder="Datei Hochladen"></textarea>
+                         -->
+                            </div>
+
+                            <div class="form-group">
+                                <button name="button" type="submit" class="btn btn-primary saab_send_email_btn" value="Submit">
+                                      Send
+                                  </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="cnt_info">
+                    <ul>
+                        <li>
+                            <!-- <i class="fa fa-map-marker" aria-hidden="true"></i> -->
+                            <p>🚩 : Москва 125167, Ул Ленинградский проспект </p>
+                        </li>
+                        <li>
+                            <!-- <i class="fa fa-envelope"></i> -->
+                            <p>✉ : prodimpeks@mail.ru</p>
+                        </li>
+                        <li>
+                            <!-- <i class="fa fa-phone"></i> -->
+                            <p>☎ : +7(495) 995-75-73 </p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End contact us  Section -->
+
 
 {%endblock%}
