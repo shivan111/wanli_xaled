@@ -252,3 +252,7 @@ address {
 .saab_send_email_btn {
     background-color: #339af0;
 }
+
+.saab_send_email_btn:hover {
+    background-color: #ff6b6b;
+}

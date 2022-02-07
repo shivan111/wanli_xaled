@@ -1,9 +1,9 @@
 <?php
 if($_POST && isset($_FILES['file']))
 {
-	$recipient_email 	= "1.handwerk.de@gmail.com"; //recepient
-	$from_email 		= "info@1-handwerk.de"; //from email using site domain.
-	$subject			= "Attachment email from 1-handwer.de website!"; //email subject line
+	$recipient_email 	= "prodimpeks@mail.ru"; //recepient
+	$from_email 		= "info@prodimpeks.ru"; //from email using site domain.
+	$subject			= "Attachment email from prodimpeks.ru website!"; //email subject line
 	
 
 	$sender_name = filter_var($_POST["sender_name"], FILTER_SANITIZE_STRING); //capture sender name
