@@ -247,6 +247,18 @@ address {
 }
 
 
+/* ########################################################### */
+
+.saab_class_company_name {
+    text-align: center;
+    color: rgb(29, 28, 28);
+    text-shadow: 2px 8px 8px #b1a8a8;
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
 /* email section css */
 
 .saab_send_email_btn {
@@ -256,3 +268,8 @@ address {
 .saab_send_email_btn:hover {
     background-color: #ff6b6b;
 }
+
+
+/* .saab_div_company_name {
+    background-color: rgb(255, 255, 255);
+} */

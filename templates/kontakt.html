@@ -2,8 +2,9 @@
 <!-- <div class="container container_footer"> -->
 
 <!-- start contact us Section -->
-<h1> Prodimaks / Продимпэкс</h1>
 
+
+{%if error_statment%} {{error_statment}} {%endif%}
 
 <section id="Contact_us">
     <div class="container">
@@ -17,10 +18,15 @@
                 </div>
             </div>
 
+
             <div class="col-sm-6">
                 <div id="cnt_form">
                     <!-- email/send_em.py            -->
-                    <form enctype="multipart/form-data" id="contact-form" class="contact" name="contact-form" method="post" action=" ../static/php/send-mail.php">
+                    <!-- -->
+                    <!-- action="../static/php/send-mail.php" -->
+                    <form enctype="multipart/form-data" id="contact-form" class="contact" name="contact-form" method="post" action="{{ url_for( 'send_email_func') }}">
+
+
                         <fieldset>
                             <legend>
                                 You can send us an E-Mail ...
@@ -28,63 +34,10 @@
                                       Jetzt einen Termin buchen
                                   </a> -->
                             </legend>
-                            <!-- 
-                            <div class="form-group">
-                                <select class="form-control form-control-sm" aria-required="true" required="required" name="type_of_work_select">
-                                      <option>Bitte Auswahl treffen!</option>
-                                      <option>Allround Handwerk allgemein</option>
-                                      <option>IKEA Küchenplanung + Montage</option>
-                                      <option>Küchenmontage IKEA</option>
-                                      <option>Möbelmontage</option>
-                                      <option>IKEA Pax Schrank Service</option>
-                                      <option>Singleküche / Büroküche kaufen</option>
-                                      <option>Küchenelektrogeräte anschließen</option>
-                                      <option>Spülmaschine / Waschmaschine anschließen</option>
-                                      <option>Arbeitsplattenservice</option>
-                                      <option>Küchenumzug</option>
-                                      <option>Wohnungsumzug</option>
-                                      <option>Maler / Renovierung</option>
-                                      <option>Laminat verlegen lassen</option>
-                                      <option>Objekteinrichtung</option>
-                                      <option>Objektküchen für Bauträger</option>
-                                      <option>Ladenbau / Objekteinrichtung</option>
-                                      <option>Gartenhaus Montage</option>
-                                      <option>relocation service</option>
-                                      <option>Anfrage an Sachverständigen</option>
-                                      <option>mehrere Projekte gleichzeitig</option>
-                                  </select>
-                            </div> -->
-
-
-                            <!-- 
-                            <div class="form-group">
-                                <select class="form-control form-control-sm" aria-required="true" required="required" name="location">
-                                      <option>Bitte den Standort auswählen</option>
-                                      <option>Berlin</option>
-                                      <option>Brandenburg</option>
-                                      <option>Bergkamen</option>
-                                      <option>Bochum</option>
-                                      <option>Dortmund</option>
-                                      <option>Düsseldorf</option>
-                                      <option>Essen</option>
-                                      <option>Gelsenkirchen</option>
-                                      <option>Hamm</option>  
-                                      <option>Lippstadt</option>
-                                      <option>Lünen</option>
-                                      <option>Marl</option>
-                                      <option>Soest</option>
-                                      <option>Unna</option>
-                                      <option>Werne</option>
-
-                                      
-                            </select>
-
-                </div> -->
-
-
                             <div class="form-group">
                                 <input type="text" name="sender_name" class="form-control name-field" required="required" placeholder="Your Name" />
                             </div>
+
                             <div class="form-group">
                                 <input type="email" name="sender_email" class="form-control mail-field" required="required" placeholder="Your Email" />
                             </div>
@@ -95,7 +48,7 @@
                             <div class="form-group">
                                 <textarea name="sender_message" id="sender_message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
                             </div>
-
+                            <br>
                             <div class="form-group">
                                 <label>Attachment
                                       <input type="file" name="file[]" multiple="multiple" />
