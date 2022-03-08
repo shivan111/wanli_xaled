@@ -7,7 +7,7 @@ from flask_mail import Mail, Message
 
 app = Flask(__name__)
 
-# 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 
+ 
 # Flask-mail config part #######################
 app.config['MAIL_SERVER']='smtp.mailtrap.io'
 app.config['MAIL_PORT'] = 2525
@@ -111,6 +111,6 @@ if __name__ == '__main__':
    
     app.run(debug=True)
     
-# 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 
+
 
 # action="{{ url_for( 'send_email_func') }}"
