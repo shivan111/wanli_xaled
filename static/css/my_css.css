@@ -270,6 +270,16 @@ address {
 }
 
 
+/* separetor ###########################################################*/
+
+.separetor {
+    background: url(../img/spr_0.png) no-repeat center center;
+    overflow: hidden;
+    padding: 20px 0px 30px 0px;
+    background-color: rgb(241, 241, 241);
+}
+
+
 /* .saab_div_company_name {
     background-color: rgb(255, 255, 255);
 } */
