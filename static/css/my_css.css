@@ -267,7 +267,7 @@
                     height: 50px;
                     padding: 7px 10px;
                     border-radius: 25px;
-                    font-size: 10px;
+                    font-size: 5px;
                     text-align: center;
                 }
                 
@@ -278,6 +278,7 @@
                     border-radius: 35px;
                     font-size: 12px;
                     text-align: center;
+                    font-weight: bold;
                 }
                 
                 .saab_button_1 {
