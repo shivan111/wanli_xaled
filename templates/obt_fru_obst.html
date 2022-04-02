@@ -6,10 +6,6 @@
 </h2>
 
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
 
 
 <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -22,159 +18,169 @@
     
     -->
 
+<div class="xyz">
+
+    <button type="button" class="saab_button_1 btn btn-primary btn-circle btn-xl " onclick="filterSelection('all')">Show all</button>
+    <!-- <button type="button" class="btn btn-secondary btn-circle btn-xl">Gray</button> -->
+    <button type="button" class="saab_button_2 btn btn-success btn-circle btn-xl" onclick="filterSelection('cars')">Oвощ</button>
+    <!-- '<button type="button" class="btn btn-danger btn-circle btn-xl">Red</button>-->
+
+    <button type="button" class="saab_button_3 btn btn-warning btn-circle btn-xl" onclick="filterSelection('nature')">фрукт</button>
+
+    <button type="button" class="saab_button_4 btn btn-light btn-circle btn-xl" onclick="filterSelection('people')">Новые </button>
+    <!-- <button type="button" class="btn btn-dark btn-circle btn-xl">Black</button> -->
 
 
 
-
-<div id="myBtnContainer" class="navbar-nav me-auto mb-0 mb-lg-2  saab_navbar-nav">
-    <button class="btn " onclick="filterSelection('all')"> Show all</button>
-
-    <button class="btn" onclick="filterSelection('cars')"> Oвощ</button>
-    <br>
-    <button class="btn" onclick="filterSelection('nature')"> фрукт</button>
-    <br>
+    <!-- 
 
 
-    <div></div>
-    <button class="btn" onclick="filterSelection('people')"> Новые поступления</button>
+    <div id="myBtnContainer" class="navbar-nav me-auto mb-0 mb-lg-2  saab_navbar-nav">
+        <button class="btn " onclick="filterSelection('all')"> Show all</button>
+
+        <button class="btn" onclick="filterSelection('cars')"> Oвощ</button>
+
+        <button class="btn" onclick="filterSelection('nature')"> фрукт</button>
+
+        <button class="btn" onclick="filterSelection('people')"> Новые поступления</button>
+    </div>
+
 </div>
 
+-->
 
+    <h2 style="text-align: center;"> Оптовая торговля фруктами и овощами.
+        <div class="separetor_2"></div>
+    </h2>
 
+    <p>Наша компания «Продимпэкс» осуществляет оптовую торговлю овощами и фруктами и сотрудничает с покупателями по всем регионам России. Мы обеспечиваем поставку товара в необходимых количествах и в оптимальные сроки, всегда гарантируя высокое качество.
+        Нами предлагаются наиболее выгодные условия сотрудничества для каждого клиента. Мы предлагаем для наших клиентов качественные овощи и фрукты по оптимальным ценам. Наша компания старается максимально обеспечить потребности клиентов. Мы работаем
+        с поставщиками из Голландии, Польши, Пакистана, Египта.</p>
 
-
-<h2 style="text-align: center;"> Оптовая торговля фруктами и овощами.
-    <div class="separetor_2"></div>
-</h2>
-
-<p>Наша компания «Продимпэкс» осуществляет оптовую торговлю овощами и фруктами и сотрудничает с покупателями по всем регионам России. Мы обеспечиваем поставку товара в необходимых количествах и в оптимальные сроки, всегда гарантируя высокое качество. Нами
-    предлагаются наиболее выгодные условия сотрудничества для каждого клиента. Мы предлагаем для наших клиентов качественные овощи и фрукты по оптимальным ценам. Наша компания старается максимально обеспечить потребности клиентов. Мы работаем с поставщиками
-    из Голландии, Польши, Пакистана, Египта.</p>
-
-<!-- Portfolio Gallery Grid -->
-<!--start  fru part ####################### -->
-<div class="row">
-    <div class="column nature">
-        <div class="content">
-            <img src="{{ url_for('static',
+    <!-- Portfolio Gallery Grid -->
+    <!--start  fru part ####################### -->
+    <div class="row">
+        <div class="column nature">
+            <div class="content">
+                <img src="{{ url_for('static',
             filename='img/fru_img/0.jpg') }}" alt="Апельсины" style="width:100%">
-            <h4>Апельсины</h4>
-            <p>Апельсины..</p>
+                <h4>Апельсины</h4>
+                <p>Апельсины..</p>
+            </div>
         </div>
-    </div>
-    <div class="column nature">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column nature">
+            <div class="content">
+                <img src="{{ url_for('static',
             filename='img/fru_img/1.jpg') }}" alt="Яблоки " style="width:100%">
-            <h4>Яблоки </h4>
-            <p>Айдоред..</p>
+                <h4>Яблоки </h4>
+                <p>Айдоред..</p>
+            </div>
         </div>
-    </div>
-    <div class="column nature">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column nature">
+            <div class="content">
+                <img src="{{ url_for('static',
             filename='img/fru_img/2.jpg') }}" alt="Яблоки" style="width:100%">
-            <h4>Яблоки </h4>
-            <p>Глостер..</p>
+                <h4>Яблоки </h4>
+                <p>Глостер..</p>
+            </div>
         </div>
-    </div>
-    <div class="column nature">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column nature">
+            <div class="content">
+                <img src="{{ url_for('static',
             filename='img/fru_img/3.jpg') }}" alt="Мандарины" style="width:100%">
-            <h4>Мандарины</h4>
-            <p>Мандарины..</p>
+                <h4>Мандарины</h4>
+                <p>Мандарины..</p>
+            </div>
         </div>
-    </div>
-    <div class="column nature">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column nature">
+            <div class="content">
+                <img src="{{ url_for('static',
             filename='img/fru_img/4.jpg') }}" alt="Клубника" style="width:100%">
-            <h4>Клубника</h4>
-            <p>10*250 ..</p>
+                <h4>Клубника</h4>
+                <p>10*250 ..</p>
+            </div>
         </div>
-    </div>
-    <!--end  fru part ####################### -->
+        <!--end  fru part ####################### -->
 
-    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 
-    <!--start  овощ part ####################### -->
-    <!--start  Томаты von: 1-10 part ####################### -->
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <!--start  овощ part ####################### -->
+        <!--start  Томаты von: 1-10 part ####################### -->
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
             filename='img/obst_img/0.jpg') }}" alt="Томаты" style="width:100%">
-            <h4>Томаты </h4>
-            <p>«Зира» (Бакинские)..</p>
+                <h4>Томаты </h4>
+                <p>«Зира» (Бакинские)..</p>
+            </div>
         </div>
-    </div>
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
             filename='img/obst_img/1.jpg') }}" alt="Томаты" style="width:100%">
-            <h4>Томаты</h4>
-            <p>Томаты..</p>
+                <h4>Томаты</h4>
+                <p>Томаты..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
             filename='img/obst_img/2.jpg') }}" alt="Томаты" style="width:100%">
-            <h4>Томаты</h4>
-            <p>Томаты..</p>
+                <h4>Томаты</h4>
+                <p>Томаты..</p>
+            </div>
         </div>
-    </div>
 
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/3.jpg') }}" alt="Томаты" style="width:100%">
-            <h4>Томаты</h4>
-            <p>Томаты на ветке..</p>
+                <h4>Томаты</h4>
+                <p>Томаты на ветке..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/4.jpg') }}" alt="Томаты " style="width:100%">
-            <h4>Томаты Биф </h4>
-            <p>(92-102) (102+)..</p>
+                <h4>Томаты Биф </h4>
+                <p>(92-102) (102+)..</p>
+            </div>
         </div>
-    </div>
-    <!--end  Томаты part ####################### -->
+        <!--end  Томаты part ####################### -->
 
-    <!--start  Огурцы  von: 11-20 part ####################### -->
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <!--start  Огурцы  von: 11-20 part ####################### -->
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/14.jpg') }}" alt="Огурцы" style="width:100%">
-            <h4>Огурцы </h4>
-            <p>кор/пл..</p>
+                <h4>Огурцы </h4>
+                <p>кор/пл..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/15.jpg') }}" alt="Огурцы" style="width:100%">
-            <h4>Огурцы </h4>
-            <p>дл/пл..</p>
+                <h4>Огурцы </h4>
+                <p>дл/пл..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/16.jpg') }}" alt="Огурцы" style="width:100%">
-            <h4>Огурцы</h4>
-            <p>ср/пл..</p>
+                <h4>Огурцы</h4>
+                <p>ср/пл..</p>
+            </div>
         </div>
-    </div>
-    <!-- 
+        <!-- 
     <div class="column cars">
         <div class="content">
             <img src="{{ url_for('static',
@@ -184,231 +190,231 @@
         </div>
     </div>
 -->
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/18.jpg') }}" alt="Огурцы" style="width:100%">
-            <h4>Огурцы</h4>
-            <p>кор/пл «Зира» (Бакинские)..</p>
+                <h4>Огурцы</h4>
+                <p>кор/пл «Зира» (Бакинские)..</p>
+            </div>
         </div>
-    </div>
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/19.jpg') }}" alt="Огурцы" style="width:100%">
-            <h4>Огурцы</h4>
-            <p>кор/пл..</p>
+                <h4>Огурцы</h4>
+                <p>кор/пл..</p>
+            </div>
         </div>
-    </div>
-    <!--end  Огурцы part ####################### -->
+        <!--end  Огурцы part ####################### -->
 
-    <!--start  Картофель  von: 41-50 part ####################### -->
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <!--start  Картофель  von: 41-50 part ####################### -->
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/41.jpg') }}" alt="Картофель" style="width:100%">
-            <h4>Картофель</h4>
-            <p>нов/ур. белый..</p>
+                <h4>Картофель</h4>
+                <p>нов/ур. белый..</p>
+            </div>
         </div>
-    </div>
 
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/42.jpg') }}" alt="Картофель" style="width:100%">
-            <h4>Картофель</h4>
-            <p>белый..</p>
+                <h4>Картофель</h4>
+                <p>белый..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/43.jpg') }}" alt="Картофель" style="width:100%">
-            <h4>Картофель</h4>
-            <p>красный..</p>
+                <h4>Картофель</h4>
+                <p>красный..</p>
+            </div>
         </div>
-    </div>
 
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/44.jpg') }}" alt="Картофель" style="width:100%">
-            <h4>Картофель</h4>
-            <p>Ботато..</p>
+                <h4>Картофель</h4>
+                <p>Ботато..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/45.jpg') }}" alt="Картофель" style="width:100%">
-            <h4>Картофель</h4>
-            <p>белый..</p>
+                <h4>Картофель</h4>
+                <p>белый..</p>
+            </div>
         </div>
-    </div>
 
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/46.jpg') }}" alt="Картофель" style="width:100%">
-            <h4>Картофель</h4>
-            <p>красный..</p>
+                <h4>Картофель</h4>
+                <p>красный..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/47.jpg') }}" alt="Картофель" style="width:100%">
-            <h4>Картофель</h4>
-            <p>нов/ур. белый..</p>
+                <h4>Картофель</h4>
+                <p>нов/ур. белый..</p>
+            </div>
         </div>
-    </div>
-    <!--end  Картофель part ####################### -->
+        <!--end  Картофель part ####################### -->
 
-    <!--start  Лук  von: 51-60 part ####################### -->
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <!--start  Лук  von: 51-60 part ####################### -->
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/51.jpg') }}" alt="Лук" style="width:100%">
-            <h4>Лук</h4>
-            <p>Шаллот банановый..</p>
+                <h4>Лук</h4>
+                <p>Шаллот банановый..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/52.jpg') }}" alt="Лук" style="width:100%">
-            <h4>Лук</h4>
-            <p>белый..</p>
+                <h4>Лук</h4>
+                <p>белый..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/53.jpg') }}" alt="Лук" style="width:100%">
-            <h4>Лук</h4>
-            <p>Шаллот..</p>
+                <h4>Лук</h4>
+                <p>Шаллот..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/54.jpg') }}" alt="Лук" style="width:100%">
-            <h4>Лук</h4>
-            <p>красный..</p>
+                <h4>Лук</h4>
+                <p>красный..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/55.jpg') }}" alt="Лук" style="width:100%">
-            <h4>Лук</h4>
-            <p>репчатый нов/ур..</p>
+                <h4>Лук</h4>
+                <p>репчатый нов/ур..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/56.jpg') }}" alt="Лук" style="width:100%">
-            <h4>Лук</h4>
-            <p>репчатый н/у..</p>
+                <h4>Лук</h4>
+                <p>репчатый н/у..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/57.jpg') }}" alt="Лук" style="width:100%">
-            <h4>Лук</h4>
-            <p>репчатый..</p>
+                <h4>Лук</h4>
+                <p>репчатый..</p>
+            </div>
         </div>
-    </div>
-    <!--end  Лук part ####################### -->
+        <!--end  Лук part ####################### -->
 
 
-    <!--start  Чеснок  von: 61-70 part ####################### -->
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <!--start  Чеснок  von: 61-70 part ####################### -->
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/64.jpg') }}" alt="Чеснок" style="width:100%">
-            <h4>Чеснок</h4>
-            <p>Чеснок нов/ур..</p>
+                <h4>Чеснок</h4>
+                <p>Чеснок нов/ур..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/65.jpg') }}" alt="Чеснок" style="width:100%">
-            <h4>Чеснок</h4>
-            <p>Чеснок нов/ур..</p>
+                <h4>Чеснок</h4>
+                <p>Чеснок нов/ур..</p>
+            </div>
         </div>
-    </div>
-    <!--end  Чеснок part ####################### -->
+        <!--end  Чеснок part ####################### -->
 
 
-    <!--start  Морковь   von: 71-80 part ####################### -->
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <!--start  Морковь   von: 71-80 part ####################### -->
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/71.jpg') }}" alt="Морковь" style="width:100%">
-            <h4>Морковь</h4>
-            <p>Морковь н/у..</p>
+                <h4>Морковь</h4>
+                <p>Морковь н/у..</p>
+            </div>
         </div>
-    </div>
-    <!--end  Морковь part ####################### -->
+        <!--end  Морковь part ####################### -->
 
-    <!--start  Капуста    von: 81-90 part ####################### -->
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <!--start  Капуста    von: 81-90 part ####################### -->
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/81.jpg') }}" alt="Капуста" style="width:100%">
-            <h4>Капуста</h4>
-            <p>брюссельская..</p>
+                <h4>Капуста</h4>
+                <p>брюссельская..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/82.jpg') }}" alt="Капуста" style="width:100%">
-            <h4>Капуста</h4>
-            <p>Савойская..</p>
+                <h4>Капуста</h4>
+                <p>Савойская..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column cars">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column cars">
+            <div class="content">
+                <img src="{{ url_for('static',
         filename='img/obst_img/83.jpg') }}" alt="Капуста" style="width:100%">
-            <h4>Капуста</h4>
-            <p>Капуста б/к н/у..</p>
+                <h4>Капуста</h4>
+                <p>Капуста б/к н/у..</p>
+            </div>
         </div>
+        <!--end  Капуста  part ####################### -->
+
+        <!--end  овощ part ####################### -->
+
+        <!--////////////////////////////////////////////////////////////////////////////////////////////-->
+
     </div>
-    <!--end  Капуста  part ####################### -->
 
-    <!--end  овощ part ####################### -->
-
-    <!--////////////////////////////////////////////////////////////////////////////////////////////-->
-
-</div>
-
-<div class="row">
+    <div class="row">
 
 
 
-    <!--start   new_aus_egebt  part ####################### -->
-    <!-- <div> # </div>
+        <!--start   new_aus_egebt  part ####################### -->
+        <!-- <div> # </div>
     <div class="column people">
         <div class="content">
 
@@ -419,71 +425,71 @@
                 работаем с поставщиками из Голландии, Польши, Пакистана, Египта.</p>
 
         </div> -->
-    <h3> Новые поступления товара : Лука из Египта </h3>
+        <h3> Новые поступления товара : Лука из Египта </h3>
 
-    <p>Чеснок из Египта Диаметр : 60 мм</p>
+        <p>Чеснок из Египта Диаметр : 60 мм</p>
 
-    <h4>Фасовка :</h4>
-    <p>Мешок 25 кг</p>
+        <h4>Фасовка :</h4>
+        <p>Мешок 25 кг</p>
 
 
 
-    <div class="column people">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column people">
+            <div class="content">
+                <img src="{{ url_for('static',
             filename='img/new_aus/0.jpg') }}" alt="0.jpg" style="width:100%">
-            <h4>Лук</h4>
-            <p>Мешок..</p>
+                <h4>Лук</h4>
+                <p>Мешок..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column people">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column people">
+            <div class="content">
+                <img src="{{ url_for('static',
             filename='img/new_aus/1.jpg') }}" alt="1.jpg" style="width:100%">
-            <h4>Чеснок</h4>
-            <p>Мешок ..</p>
+                <h4>Чеснок</h4>
+                <p>Мешок ..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column people">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column people">
+            <div class="content">
+                <img src="{{ url_for('static',
             filename='img/new_aus/2.jpg') }}" alt="2.jpg" style="width:100%">
-            <h4>Чеснок</h4>
-            <p>Мешок ..</p>
+                <h4>Чеснок</h4>
+                <p>Мешок ..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column people">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column people">
+            <div class="content">
+                <img src="{{ url_for('static',
             filename='img/new_aus/3.jpg') }}" alt="3.jpg" style="width:100%">
-            <h4>Лук</h4>
-            <p>Мешок ..</p>
+                <h4>Лук</h4>
+                <p>Мешок ..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column people">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column people">
+            <div class="content">
+                <img src="{{ url_for('static',
             filename='img/new_aus/4.jpg') }}" alt="4.jpg" style="width:100%">
-            <h4>Чеснок</h4>
-            <p>Мешок ..</p>
+                <h4>Чеснок</h4>
+                <p>Мешок ..</p>
+            </div>
         </div>
-    </div>
 
-    <div class="column people">
-        <div class="content">
-            <img src="{{ url_for('static',
+        <div class="column people">
+            <div class="content">
+                <img src="{{ url_for('static',
             filename='img/new_aus/5.jpg') }}" alt="5.jpg" style="width:100%">
-            <h4>Чеснок</h4>
-            <p>Мешок ..</p>
+                <h4>Чеснок</h4>
+                <p>Мешок ..</p>
+            </div>
         </div>
+
     </div>
 
-</div>
+    <!-- END GRID -->
 
-<!-- END GRID -->
-
-{% endblock %}
+    {% endblock %}
