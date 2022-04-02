@@ -29,8 +29,8 @@ var_language={1:'Rus',
               2:'Eng',
               3:'Arab'}
 
-company_title= {'ru':'Продимэкс /',
-                'en':'Prodimaks'}
+company_title= {'ru':'Продимпэкс /',
+                'en':'Prodipeks'}
 
 ####################################
 @app.route('/') 

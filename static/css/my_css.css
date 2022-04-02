@@ -180,7 +180,7 @@
                 }
                 
                 .nav-item {
-                    color: #d2eb48;
+                    color: #db352f;
                 }
                 
                 .saab_navbar-nav {
@@ -198,9 +198,10 @@
                 .dropdown-item:hover {
                     font-weight: bold;
                     /* color: rgb(162, 207, 90); */
-                    background-color: rgb(219, 164, 141);
+                    background-color: rgb(248, 243, 241);
                 }
                 /* ############ */
+                /* start CSS company Name at the top of############ */
                 
                 .saab_class_company_name {
                     text-align: center;

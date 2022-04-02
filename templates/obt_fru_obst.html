@@ -4,10 +4,38 @@
     Оптовая торговля
     <div class="separetor_2"></div>
 </h2>
-<div id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-    <button class="btn" onclick="filterSelection('nature')"> фрукт</button>
+
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+
+<!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0  saab_navbar-nav"> 
+        
+        
+    me-auto mb-12 mb-lg-12      saab_navbar-nav
+
+    myBtnContainer
+    
+    -->
+
+
+
+
+
+<div id="myBtnContainer" class="navbar-nav me-auto mb-0 mb-lg-2  saab_navbar-nav">
+    <button class="btn " onclick="filterSelection('all')"> Show all</button>
+
     <button class="btn" onclick="filterSelection('cars')"> Oвощ</button>
+    <br>
+    <button class="btn" onclick="filterSelection('nature')"> фрукт</button>
+    <br>
+
+
+    <div></div>
     <button class="btn" onclick="filterSelection('people')"> Новые поступления</button>
 </div>
 
@@ -403,7 +431,7 @@
     <div class="column people">
         <div class="content">
             <img src="{{ url_for('static',
-            filename='img/new_aus/0.jpg') }}" alt="People" style="width:100%">
+            filename='img/new_aus/0.jpg') }}" alt="0.jpg" style="width:100%">
             <h4>Лук</h4>
             <p>Мешок..</p>
         </div>
@@ -412,7 +440,7 @@
     <div class="column people">
         <div class="content">
             <img src="{{ url_for('static',
-            filename='img/new_aus/1.jpg') }}" alt="People" style="width:100%">
+            filename='img/new_aus/1.jpg') }}" alt="1.jpg" style="width:100%">
             <h4>Чеснок</h4>
             <p>Мешок ..</p>
         </div>
@@ -421,7 +449,7 @@
     <div class="column people">
         <div class="content">
             <img src="{{ url_for('static',
-            filename='img/new_aus/2.jpg') }}" alt="People" style="width:100%">
+            filename='img/new_aus/2.jpg') }}" alt="2.jpg" style="width:100%">
             <h4>Чеснок</h4>
             <p>Мешок ..</p>
         </div>
@@ -430,7 +458,7 @@
     <div class="column people">
         <div class="content">
             <img src="{{ url_for('static',
-            filename='img/new_aus/3.jpg') }}" alt="People" style="width:100%">
+            filename='img/new_aus/3.jpg') }}" alt="3.jpg" style="width:100%">
             <h4>Лук</h4>
             <p>Мешок ..</p>
         </div>
@@ -439,7 +467,7 @@
     <div class="column people">
         <div class="content">
             <img src="{{ url_for('static',
-            filename='img/new_aus/5.jpg') }}" alt="5.jpg" style="width:100%">
+            filename='img/new_aus/4.jpg') }}" alt="4.jpg" style="width:100%">
             <h4>Чеснок</h4>
             <p>Мешок ..</p>
         </div>
@@ -448,7 +476,7 @@
     <div class="column people">
         <div class="content">
             <img src="{{ url_for('static',
-            filename='img/new_aus/4.jpg') }}" alt="4.jpg" style="width:100%">
+            filename='img/new_aus/5.jpg') }}" alt="5.jpg" style="width:100%">
             <h4>Чеснок</h4>
             <p>Мешок ..</p>
         </div>
