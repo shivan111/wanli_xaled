@@ -250,7 +250,8 @@
                 .xyz {
                     background-size: auto;
                     text-align: center;
-                    padding-top: 10px;
+                    padding-top: 5px;
+                    padding-bottom: 10px;
                 }
                 
                 .btn-circle.btn-sm {
