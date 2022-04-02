@@ -29,7 +29,7 @@ var_language={1:'Rus',
               2:'Eng',
               3:'Arab'}
 
-company_title= {'ru':'Продимэкс',
+company_title= {'ru':'Продимэкс /',
                 'en':'Prodimaks'}
 
 ####################################
@@ -46,14 +46,14 @@ def index_func():
 def useful_info_func():
     page_title='Information'
     return render_template('useful_info.html',
-                           page_title=page_title,var_top_nav_bar=var_top_nav_bar,
+                           page_title=page_title,company_title=company_title,var_top_nav_bar=var_top_nav_bar,
                            var_language=var_language)
 
 @app.route('/Терминология')
 def term_func():
     page_title='Termenology'
     return render_template('term.html',
-                           page_title=page_title,var_top_nav_bar=var_top_nav_bar,
+                           page_title=page_title,company_title=company_title,var_top_nav_bar=var_top_nav_bar,
                            var_language=var_language)
 
 
@@ -61,7 +61,7 @@ def term_func():
 def kontakt_func():
     page_title='contact'
     return render_template('kontakt.html',
-                           page_title=page_title,
+                           page_title=page_title,company_title=company_title,
                            var_top_nav_bar=var_top_nav_bar,
                            var_language=var_language)
 
@@ -70,14 +70,14 @@ def kontakt_func():
 def obt_fru_obst_func():
     page_title='obt_fru_obst'
     return render_template('obt_fru_obst.html',
-                           page_title=page_title,var_top_nav_bar=var_top_nav_bar,
+                           page_title=page_title,company_title=company_title,var_top_nav_bar=var_top_nav_bar,
                            var_language=var_language)
 
 @app.route('/about')
 def about_func():
     page_title='About'
     return render_template('about.html',
-                           page_title=page_title,var_top_nav_bar=var_top_nav_bar,
+                           page_title=page_title,company_title=company_title,var_top_nav_bar=var_top_nav_bar,
                            var_language=var_language)
 
 
@@ -85,7 +85,7 @@ def about_func():
 def eng_page_func():
     page_title='eng'
     return render_template('eng.html',
-                           page_title=page_title,var_top_nav_bar=var_top_nav_bar,
+                           page_title=page_title,company_title=company_title,var_top_nav_bar=var_top_nav_bar,
                            var_language=var_language)
 #############################################
 
